@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:mtac_app_eg/buttons/archive_button.dart';
 import 'package:mtac_app_eg/buttons/floating_chat_button.dart';
+import 'package:mtac_app_eg/image_slider/home_page_image_slider.dart';
 import 'package:mtac_app_eg/list_view/recycle_list_view.dart';
+import 'package:flutter_swiper_view/flutter_swiper_view.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -35,9 +37,10 @@ class Home extends StatelessWidget {
         ),
         body: const Column(
           children: [
+            HomePageImageSlider(),
             ArchiveButton(),
             Padding(
-              padding: EdgeInsets.only(left: 10),
+              padding: EdgeInsets.only(left: 10, bottom: 10),
               child: Row(
                 children: [
                   Icon(Icons.recycling, size: 25,),
