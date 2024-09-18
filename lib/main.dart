@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const Home(),
+      home: const HomePage(),
       theme: ThemeData(
         fontFamily: 'Arial',
         appBarTheme: const AppBarTheme(
@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
         )
       ),
       routes: {
+        '/home_page':(context) => const HomePage(),
         '/notification_page':(context) => const NotificationPage(),
         '/chat_page':(context) => const ChatPage(),
         '/archive_page':(context) => const ArchivePage(),

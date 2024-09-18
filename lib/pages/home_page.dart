@@ -5,8 +5,8 @@ import 'package:mtac_app_eg/image_slider/home_page_image_slider.dart';
 import 'package:mtac_app_eg/list_view/recycle_list_view.dart';
 import '../buttons/login_register_button.dart';
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
