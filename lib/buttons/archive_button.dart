@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ArchiveButton extends StatelessWidget {
@@ -18,15 +17,15 @@ class ArchiveButton extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
               ),
-              side: const BorderSide(color: CupertinoColors.activeBlue)),
+              side: const BorderSide(color: Color(0xFF1565C0))),
           icon: const Icon(
             Icons.cloud_upload_outlined,
-            color: CupertinoColors.activeBlue,
+            color: Color(0xFF1565C0),
             size: 35,
           ),
           label: const Text(
             'Kho Lưu trữ',
-            style: TextStyle(color: CupertinoColors.activeBlue, fontSize: 20),
+            style: TextStyle(color: Color(0xFF1565C0), fontSize: 20),
           ),
         ),
       ),

@@ -7,7 +7,7 @@ class FloatingChatButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      backgroundColor: Colors.deepOrange,
+      backgroundColor: const Color(0xFFF44336),
       shape: const CircleBorder(),
       child: const Icon(
         CupertinoIcons.bubble_left_bubble_right_fill,

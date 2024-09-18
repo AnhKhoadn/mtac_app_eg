@@ -29,6 +29,7 @@ class HomePageImageSlider extends StatelessWidget {
             fit: BoxFit.cover
           );
         },
+        pagination: const SwiperPagination(),
         viewportFraction: 0.7,
         scale: 0.8,
       ),
