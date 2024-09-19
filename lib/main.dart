@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mtac_app_eg/pages/archive_page.dart';
 import 'package:mtac_app_eg/pages/chat_page.dart';
+import 'package:mtac_app_eg/pages/intro_page.dart';
 import 'package:mtac_app_eg/pages/login_page.dart';
 import 'package:mtac_app_eg/pages/notification_page.dart';
 import 'package:mtac_app_eg/pages/register_page.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const HomePage(),
+      home: const IntroPage(),
       theme: ThemeData(
         fontFamily: 'Arial',
         appBarTheme: const AppBarTheme(
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         )
       ),
       routes: {
+        '/intro_page':(context) => const IntroPage(),
         '/home_page':(context) => const HomePage(),
         '/notification_page':(context) => const NotificationPage(),
         '/chat_page':(context) => const ChatPage(),

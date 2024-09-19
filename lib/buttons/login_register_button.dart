@@ -14,7 +14,7 @@ class LoginRegisterButton extends StatelessWidget {
                 flex: 1,
                 child: OutlinedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/login_page');
+                    Navigator.pushReplacementNamed(context, '/login_page');
                   },
                   style: OutlinedButton.styleFrom(
                     backgroundColor: const Color(0xFF1565C0),
@@ -32,7 +32,7 @@ class LoginRegisterButton extends StatelessWidget {
                 flex: 1,
                 child: OutlinedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/register_page');
+                    Navigator.pushReplacementNamed(context, '/register_page');
                   },
                   style: OutlinedButton.styleFrom(
                     backgroundColor: const Color(0xFF1565C0),
@@ -46,6 +46,7 @@ class LoginRegisterButton extends StatelessWidget {
                   ),
                 ))
           ],
-        ));
+        )
+    );
   }
 }

@@ -10,7 +10,7 @@ class RegisterPage extends StatelessWidget {
         appBar: AppBar(
           leading: IconButton(
             onPressed: (){
-              Navigator.pushNamed(context, '/home_page');
+              Navigator.pushReplacementNamed(context, '/home_page');
             },
             icon: const Icon(CupertinoIcons.xmark),
           ),
@@ -84,7 +84,7 @@ class RegisterPage extends StatelessWidget {
                     const Text('Đã có tài khoản?  ', style: TextStyle(color: Colors.black, fontSize: 20),),
                     GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, '/login_page');
+                        Navigator.pushReplacementNamed(context, '/login_page');
                       },
                       child: const Text(
                         'Đăng nhậṕ',

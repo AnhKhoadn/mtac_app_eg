@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -11,7 +10,7 @@ class LoginPage extends StatelessWidget {
         appBar: AppBar(
           leading: IconButton(
             onPressed: (){
-              Navigator.pushNamed(context, '/home_page');
+              Navigator.pushReplacementNamed(context, '/home_page');
             },
             icon: const Icon(CupertinoIcons.xmark),
           ),
@@ -83,7 +82,7 @@ class LoginPage extends StatelessWidget {
                     const Text('Chưa có tài khoản?  ', style: TextStyle(color: Colors.black, fontSize: 20),),
                     GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, '/register_page');
+                        Navigator.pushReplacementNamed(context, '/register_page');
                       },
                       child: const Text(
                         'Đăng ký',
