@@ -16,8 +16,7 @@ class HomePageImageSlider extends StatelessWidget {
     final double screenWidth = MediaQuery.of(context).size.width;
 
     return Container(
-      padding: const EdgeInsets.all(10),
-      margin: const EdgeInsets.all(5),
+      padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
       alignment: Alignment.center,
       constraints: BoxConstraints.expand(height: 150, width: screenWidth),
       child: Swiper(

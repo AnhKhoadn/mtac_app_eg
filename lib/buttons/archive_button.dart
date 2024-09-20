@@ -7,7 +7,7 @@ class ArchiveButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        margin: const EdgeInsets.symmetric(vertical: 15),
+        padding: const EdgeInsets.only(left: 10, right: 10, bottom: 10),
         child: OutlinedButton.icon(
           onPressed: () {
             Navigator.pushNamed(context, "/archive_page");

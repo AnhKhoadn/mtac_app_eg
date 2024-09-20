@@ -6,8 +6,7 @@ class LoginRegisterButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: const EdgeInsets.all(5),
-        height: 50,
+        margin: const EdgeInsets.all(10),
         child: Row(
           children: [
             Expanded(
@@ -27,7 +26,7 @@ class LoginRegisterButton extends StatelessWidget {
                     style: TextStyle(color: Colors.white, fontSize: 17),
                   ),
                 )),
-            const SizedBox(width: 5),
+            const SizedBox(width: 10),
             Expanded(
                 flex: 1,
                 child: OutlinedButton(

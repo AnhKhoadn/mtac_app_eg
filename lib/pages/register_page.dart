@@ -87,7 +87,7 @@ class RegisterPage extends StatelessWidget {
                         Navigator.pushReplacementNamed(context, '/login_page');
                       },
                       child: const Text(
-                        'Đăng nhậṕ',
+                        'Đăng nhập',
                         style: TextStyle(
                             color: Colors.black,
                             fontSize: 20,
